@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding:0;
+    outline:0:
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* top bar */
+
+.main_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.main_section .heading h1{
+    font-size: 50px;
+    text-align: center;
+}
+.main_section .image{
+    width: 40%;
+}
+.main_section .image img{
+    width: 100%;
+    border-radius: 10px solid green;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+/* card section */
+
+.card{
+    background-color: aliceblue;
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px;
+}
+.card .about{
+    width: 50%;
+    margin: 20px auto;
+}
+.card .about p {
+    color: rgb(195, 38, 38);
+}
+.card .card_image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(135, 50, 50);
+}
+
+/* map section */
+
+.map h1{
+    text-align: center;
+    margin: 50px auto;
+    color: green;
+    font-weight: 800px;
+    font-size: 50px;
+}
+.map iframe{
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width:1200) {
+    .card .about p {
+        width: 80%;
+    }  
+}
+
+@media screen and (max-width:850px){
+    .main_section .image{
+        width: 60%;
+    }
+}
+@media screen and (max-width:554px){
+    .main_section .heading h1{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:400px){
+    .main_section .image{
+        width: 80%;
+    }
+}
